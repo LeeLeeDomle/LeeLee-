@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leah Domle </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="hero-reveal">
+  <div class="logo">LeeLee</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<div class="splash" id="splash">
+  <div class="curtain-rail"></div>
+  <div class="curtain-panel curtain-left" id="curtainLeft">
+    <canvas id="canvasLeft"></canvas>
+  </div>
+  <div class="curtain-panel curtain-right" id="curtainRight">
+    <canvas id="canvasRight"></canvas>
+  </div>
+  <div class="greeting-stage">
+    <div class="greeting" id="greetingText">Hello World</div>
+  </div>
+</div>
+
+<div class="hero" id="home">
+  <div>
+    <div class="hero-eyebrow hero-reveal">Hello, my name is</div>
+    <h1 class="hero-reveal">Leah Domle. <br> <span class="accent"></span> </h1>
+    <p class="tagline hero-reveal"> I'm a developer. <br>I enjoy turning ideas into useful, thoughtful digital experiences through code, with attention to the details that make them work seamlessly.</p>
+    <div class="btn-row hero-reveal">
+      <a href="https://github.com/LeeLeeDomle" class="btn-primary" target="_blank">GitHub</a>
+      <a href="#contact" class="btn-outline">Let's talk →</a>
+    </div>
+    <!-- <div class="badge hero-reveal"><span class="dot"></span> Currently learning: Express.js & MongoDB</div> -->
+  </div>
+  <div class="avatar-box hero-reveal">
+    <img src="images/avatar.png" alt="Leah avatar" class="avatar-img">
+  </div>
+</div>
+
+<section class="about reveal" id="about">
+  <div class="wrap">
+    <h2 class="section-title">About <span class="accent">Me</span></h2>
+    <div class="about-grid">
+      <div class="about-text-col">
+        <div class="about-blob blob-1"></div>
+        <div class="about-blob blob-2"></div>
+        <p>I came into web development from a non-CS background, with a background in Chemistry that taught me how to break down complex ideas and explain them clearly. I bring that same approach to my code: <span class="accent">clean, readable, one step at a time.</span> I've built several projects so far, from a farm equipment rental platform to a recipe discovery app, and I'm now sharpening my backend skills to become a well-rounded developer.</p>
+        <p>
+I’m open to opportunities to collaborate, contribute to meaningful projects and keep growing as a developer.</p>
+      </div>
+      <div class="about-decor">
+        <div class="decor-col">
+          <div class="decor-pill gold"></div>
+          <div class="decor-circle low"></div>
+        </div>
+        <div class="decor-col">
+          <div class="decor-pill outline"></div>
+        </div>
+        <div class="decor-col">
+          <div class="decor-circle"></div>
+          <div class="decor-pill gold small"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <div class="wrap">
+    <h2 class="section-title">My <span class="accent">Skills</span></h2>
+    <p class="section-sub">What I can build with, right now</p>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon icon-html">H</div>
+        <div>
+          <h4>HTML & CSS</h4>
+          <p>Semantic markup and responsive layouts — separate stylesheets per page, no frameworks.</p>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon icon-js">JS</div>
+        <div>
+          <h4>JavaScript</h4>
+          <p>DOM manipulation, event handling, and fetching data from APIs.</p>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon icon-node">N</div>
+        <div>
+          <h4>Node.js & Express.js</h4>
+          <p>Building REST APIs — routing, middleware, request/response handling, error handling.</p>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon icon-mongo">M</div>
+        <div>
+          <h4>MongoDB</h4>
+          <p>Database design, CRUD operations, data modelling, queries and aggregation basics</p>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon icon-git">G</div>
+        <div>
+          <h4>Git & GitHub</h4>
+          <p>Version control, commits, and managing project repositories.</p>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon icon-tc">API</div>
+        <div>
+          <h4>API Development & Testing </h4>
+          <p>API integration, HTTP methods, request and response handling, endpoint testing and debugging.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="soft-skills" class="reveal">
+  <div class="wrap">
+    <h2 class="section-title">Soft <span class="accent">Skills</span></h2>
+    <p class="section-sub">Beyond the code</p>
+    <div class="soft-skills-grid">
+      <div class="soft-skill-card reveal">
+        <h4>Communication</h4>
+        <p>Able to break down technical ideas and communicate them clearly to different audiences.</p>
+      </div>
+      <div class="soft-skill-card reveal">
+        <h4>Problem-Solving</h4>
+        <p>Chemistry background trained a methodical, step-by-step approach to debugging and troubleshooting.</p>
+      </div>
+      <div class="soft-skill-card reveal">
+        <h4>Self-Discipline</h4>
+        <p>Open to learning, embracing new challenges, and adjusting to different ways of working/learning.</p>
+      </div>
+      <div class="soft-skill-card reveal">
+        <h4>Adaptability</h4>
+        <p>Comfortable picking up new tools and concepts quickly, from frontend into backend fundamentals.</p>
+      </div>
+      <div class="soft-skill-card reveal">
+        <h4>Attention to Detail</h4>
+        <p>Careful, methodical approach to code quality, clean, readable, one step at a time.</p>
+      </div>
+      <div class="soft-skill-card reveal">
+        <h4>Collaboration</h4>
+        <p>Open to feedback and working with teams to build something better than working solo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="work-section reveal" id="work">
+  <div class="wrap">
+    <h2 class="section-title">My <span class="accent">Work</span></h2>
+    <p class="section-sub">A few projects I've built while learning</p>
+    <div class="work-grid">
+
+      <div class="project-card reveal">
+        <button class="project-thumb" type="button" data-video="images/farmrent.mp4" aria-label="Watch the FarmRent video">
+          <img src="images/hero bg3.jpeg" alt="FarmRent preview" class="thumb-img">
+          <span class="play-badge" aria-hidden="true">&#9654;</span>
+        </button>
+        <div class="project-body">
+          <h3>FarmRent</h3>
+          <p>Farm equipment rental platform with user authentication.</p>
+          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="project-links">
+            <button class="project-btn" type="button" data-video="images/Farmrent.mp4">Watch Video &#9654;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <a class="project-thumb" href="https://recipe-fix.vercel.app/" target="_blank" rel="noopener" aria-label="Open Savour live site">
+          <img src="images/savour.jpg" alt="Savour preview" class="thumb-img">
+        </a>
+        <div class="project-body">
+          <h3>Savour</h3>
+          <p>Recipe discovery app using TheMealDB API.</p>
+          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>API</span></div>
+          <div class="project-links">
+            <a class="project-btn" href="https://recipe-fix.vercel.app/" target="_blank" rel="noopener">Live Demo &#8599;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <a class="project-thumb" href="https://marfojacob.netlify.app/" target="_blank" rel="noopener" aria-label="Open the Birthday Gift Site">
+          <img src="images/mama.png" alt="Birthday Gift Site preview" class="thumb-img">
+        </a>
+        <div class="project-body">
+          <h3>Birthday Gift Site</h3>
+          <p>Digital birthday gift with a photo gallery, videos, playlists and a wishes section.</p>
+          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="project-links">
+            <a class="project-btn" href="https://marfojacob.netlify.app/" target="_blank" rel="noopener">Live Demo &#8599;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <button class="project-thumb" type="button" data-video="images/Jael.mp4" aria-label="Watch the Jael video">
+          <img src="images/jael.png" alt="Jael preview" class="thumb-img">
+          <span class="play-badge" aria-hidden="true">&#9654;</span>
+        </button>
+        <div class="project-body">
+          <h3>Jael</h3>
+          <p>A fashion E-commerce website</p>
+          <div class="tech-tags"><span>REACT</span><span>CSS</span><span>JS</span></div>
+          <div class="project-links">
+            <button class="project-btn" type="button" data-video="images/Jael.mp4">Watch Video &#9654;</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="contact reveal" id="contact">
+  <div class="wrap">
+    <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+    <p class="section-sub">Open to junior and trainee developer roles</p>
+    <div class="contact-layout">
+      <div class="contact-info">
+        <h3>Let's talk</h3>
+        <p>Whether it's a role, an internship, or just a question about a project, reach out however's easiest for you.</p>
+        <div class="contact-detail"><span class="label">Email</span><span class="value">linadomle@gmail.com</span></div>
+        <div class="contact-detail"><span class="label">WhatsApp</span><span class="value"><a data-whatsapp href="#" target="_blank" rel="noopener">Chat on WhatsApp</a></span></div>
+        <div class="contact-detail"><span class="label">Location</span><span class="value">Jos, Plateau State, Nigeria</span></div>
+        <div class="contact-detail"><span class="label">GitHub</span><span class="value">github.com/LeeLeeDomle</span></div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="subject" placeholder="Subject">
+        <textarea id="message" placeholder="Your message..." required></textarea>
+        <button type="submit">Send Message</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>©️ 2026 Leah. Built with HTML, CSS & JavaScript.</footer>
+
+<a class="whatsapp-float" data-whatsapp href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 32 32" width="30" height="30" fill="#fff" aria-hidden="true"><path d="M16.04 3C9.4 3 4 8.4 4 15.04c0 2.12.55 4.18 1.6 6L4 28l7.1-1.86a12 12 0 0 0 4.94 1.06h.01C22.66 27.2 28 21.8 28 15.16 28 8.5 22.7 3 16.04 3zm0 21.9c-1.78 0-3.52-.48-5.04-1.38l-.36-.22-4.2 1.1 1.12-4.1-.24-.38a9.9 9.9 0 0 1-1.52-5.3c0-5.5 4.48-9.98 10-9.98 5.5 0 9.96 4.48 9.96 9.98 0 5.52-4.46 9.98-9.98 9.98z"/><path d="M21.5 18.3c-.3-.15-1.8-.9-2.08-1-.28-.1-.48-.15-.68.15-.2.3-.78 1-.96 1.2-.18.2-.35.22-.65.07-.3-.15-1.28-.47-2.44-1.5-.9-.8-1.5-1.8-1.68-2.1-.18-.3-.02-.46.13-.6.14-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.64-.93-2.24-.25-.58-.5-.5-.68-.5h-.58c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.5.7.3 1.26.48 1.7.62.72.22 1.36.2 1.88.12.58-.08 1.8-.74 2.05-1.45.25-.7.25-1.32.18-1.45-.08-.12-.28-.2-.58-.35z"/></svg></a>
+
+<div class="video-modal" id="videoModal">
+  <div class="video-modal-box">
+    <button class="video-close" id="videoClose" type="button" aria-label="Close video">&#10005;</button>
+    <video id="modalVideo" controls playsinline preload="none"></video>
+    <p class="video-missing">Video coming soon.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
