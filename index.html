@@ -173,7 +173,7 @@ I’m open to opportunities to collaborate, contribute to meaningful projects an
     <div class="work-grid">
 
       <div class="project-card reveal">
-        <button class="project-thumb" type="button" data-video="images/farmrent.mp4" aria-label="Watch the FarmRent video">
+        <button class="project-thumb" type="button" data-video="images/Farmrent.mp4" aria-label="Watch the FarmRent video">
           <img src="images/hero bg3.jpeg" alt="FarmRent preview" class="thumb-img">
           <span class="play-badge" aria-hidden="true">&#9654;</span>
         </button>
@@ -242,16 +242,16 @@ I’m open to opportunities to collaborate, contribute to meaningful projects an
       <div class="contact-info">
         <h3>Let's talk</h3>
         <p>Whether it's a role, an internship, or just a question about a project, reach out however's easiest for you.</p>
-        <div class="contact-detail"><span class="label">Email</span><span class="value">"mailto:linadomle@gmail.com"</span></div>
+        <div class="contact-detail"><span class="label">Email</span><span class="value"><a href="mailto:linadomle@gmail.com">linadomle@gmail.com</a></span></div>
         <div class="contact-detail"><span class="label">WhatsApp</span><span class="value"><a data-whatsapp href="https://wa.me/+2347010191231" target="_blank" rel="noopener">Chat on WhatsApp</a></span></div>
         <div class="contact-detail"><span class="label">Location</span><span class="value">Jos, Plateau State, Nigeria</span></div>
         <div class="contact-detail"><span class="label">GitHub</span><span class="value">github.com/LeeLeeDomle</span></div>
       </div>
-      <form class="contact-form" id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <input type="text" id="subject" placeholder="Subject">
-        <textarea id="message" placeholder="Your message..." required></textarea>
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/maeoedrj" method="POST">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <input type="text" id="subject" name="subject" placeholder="Subject">
+        <textarea id="message" name="message" placeholder="Your message..." required></textarea>
         <button type="submit">Send Message</button>
         <p class="form-status" id="formStatus"></p>
       </form>
