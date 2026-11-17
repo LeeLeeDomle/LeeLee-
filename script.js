@@ -33,8 +33,6 @@ function showHeroContent() {
 function runCurtainSequence() {
   let step = 0;
 
-  // the curtain starts parting right away and takes about as long as all
-  // the greetings together, so it is fully open as the last one finishes
   requestAnimationFrame(function () {
     requestAnimationFrame(function () {
       curtainLeft.classList.add('opening');
@@ -47,11 +45,11 @@ function runCurtainSequence() {
 
     setTimeout(function () {
       showHeroContent();
-    }, 250);
+    }, 200);
 
     setTimeout(function () {
       splash.classList.add('hide');
-    }, 400);
+    }, 350);
   }
 
   function showStep() {
@@ -63,22 +61,34 @@ function runCurtainSequence() {
       greetingText.classList.add('show');
 
       if (step < greetings.length) {
-        setTimeout(showStep, 450);
+        setTimeout(showStep, 300);
       } else {
-        setTimeout(finish, 600);
+        setTimeout(finish, 450);
       }
-    }, 100);
+    }, 80);
   }
 
   showStep();
 }
 
+let splashSeen = false;
+try {
+  splashSeen = sessionStorage.getItem('splashSeen') === 'yes';
+} catch (error) {
+  splashSeen = false;
+}
+
 window.addEventListener('load', function () {
-  if (prefersReducedMotion) {
-    splash.classList.add('hide');
+  if (prefersReducedMotion || splashSeen) {
+    splash.style.display = 'none';
     showHeroContent();
   } else {
     runCurtainSequence();
+    try {
+      sessionStorage.setItem('splashSeen', 'yes');
+    } catch (error) {
+      splashSeen = false;
+    }
   }
 });
 
